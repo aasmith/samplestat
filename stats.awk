@@ -30,7 +30,7 @@ function collect(name, fvalues, type) {
           fv = min(fvalues[fname] - prev[name, fname], 100)
           break
 
-        case "value":
+        case "gauge":
           fv = fvalues[fname]
           break
       }

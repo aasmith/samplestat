@@ -21,14 +21,14 @@
 /^procs_running/ {
   f["prun"] = $2
 
-  collect($1, f, "value")
+  collect($1, f, "gauge")
   summary($1, f)
 }
 
 /^procs_blocked/ {
   f["pblk"] = $2
 
-  collect($1, f, "value")
+  collect($1, f, "gauge")
   summary($1, f)
 }
 
